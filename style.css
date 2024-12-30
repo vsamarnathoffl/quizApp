@@ -1,0 +1,92 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hidden {
+        display: none !important;
+      }
+      .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        width: 90%;
+        min-width: 300px;
+        max-width: 350px;
+        background-color: #121212;
+        padding:20px;
+        border-radius:10px;
+        box-shadow: 0px 0px 3px 1px #242424;
+
+      }
+      #start-quiz,#next-button,#restart-button{
+        background-color: #790279;
+        color:white;
+        padding:7px 10px;
+        border: none;
+        border-radius: 5px;
+        transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
+      }
+      #start-quiz:hover,#next-button:hover,#restart-button:hover{
+        background-color: #b804b8;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      #start-quiz:active,#next-button:active,
+      #restart-button:active{
+        background-color: #790279;
+        transform:scale(0.95);
+      }
+      #question-container{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap:10px;
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        width: 100%;
+      }
+      li{
+        list-style-type: none;
+        padding:10px;
+        border-radius: 5px;
+        background-color: #1c1c1c;
+        box-shadow: 0px 0px 2px 2px #100f0f;
+        width:100%;
+        transition: background-color 0.1s ease-in-out,transform 0.1s ease-in-out;
+      }
+      li:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        border: 1px solid #fff;
+      }
+      .bgColor{
+        background-color: #790279;
+      }
+      #score-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap:10px;
+      }
